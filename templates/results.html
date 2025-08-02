@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container results-container">
+        <h1>Case Details</h1>
+        {% if data %}
+            <p><strong>Parties:</strong> {{ data.parties }}</p>
+            <p><strong>Case Status / Diary No:</strong> {{ data.case_status_summary }}</p>
+            <p><strong>Next Hearing Date / Court:</strong> {{ data.next_hearing_date }}</p>
+            <p><em>To find PDF orders, you may need to click into the specific case on the court's website.</em></p>
+        {% else %}
+            <p>No data found.</p>
+        {% endif %}
+        <br>
+        <a href="/" class="back-link">Back to Search</a>
+    </div>
+</body>
+</html>

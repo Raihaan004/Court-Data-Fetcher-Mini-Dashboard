@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Court Data Fetcher</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Court Case Data Fetcher</h1>
+        {% if error %}
+            <div class="error">{{ error }}</div>
+        {% endif %}
+        <form method="POST">
+            <label for="case_type">Case Type:</label>
+            <select id="case_type" name="case_type" required>
+                <option value="">-- Select a Case Type --</option>
+                {% for type in case_types %}
+                    <option value="{{ type }}">{{ type }}</option>
+                {% endfor %}
+            </select>
+            
+            <label for="case_number">Case Number:</label>
+            <input type="text" id="case_number" name="case_number" placeholder="e.g., 1005" required>
+            
+            <label for="case_year">Filing Year:</label>
+            <input type="text" id="case_year" name="case_year" placeholder="e.g., 2024" required>
+            
+            <button type="submit">Fetch Data</button>
+        </form>
+    </div>
+</body>
+</html>
