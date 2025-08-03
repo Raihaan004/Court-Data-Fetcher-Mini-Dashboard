@@ -45,7 +45,7 @@ Follow these instructions to get the project up and running on your local machin
 First, clone this repository to your local machine.
 ```bash
 git clone https://github.com/Raihaan004/Court-Data-Fetcher-Mini-Dashboard.git
-cd court-data-fetcher
+cd court-data-fetcher-mini-dashboard
 ```
 
 ### 2. Create a Virtual Environment
