@@ -13,7 +13,14 @@
             <p><strong>Parties:</strong> {{ data.parties }}</p>
             <p><strong>Case Status / Diary No:</strong> {{ data.case_status_summary }}</p>
             <p><strong>Next Hearing Date / Court:</strong> {{ data.next_hearing_date }}</p>
-            <p><em>To find PDF orders, you may need to click into the specific case on the court's website.</em></p>
+            
+            <!-- PDF Download Link Section -->
+            {% if data.pdf_link and data.pdf_link != 'Not Found' %}
+                <p><strong>Most Recent Order:</strong> <a href="{{ data.pdf_link }}" class="btn-download" target="_blank">Download PDF</a></p>
+            {% else %}
+                <p><strong>Most Recent Order:</strong> No PDF order found.</p>
+            {% endif %}
+
         {% else %}
             <p>No data found.</p>
         {% endif %}
