@@ -6,7 +6,7 @@ A web application built with Python and Flask that allows users to fetch case de
 
 ## 🎥 Video Demo
 
-[Watch a live demo of the application here!](https://www.loom.com/share/790c77e135954143b615107ef59d6ffe?sid=a201afd8-377e-4119-819c-afc0687d571a)
+[Watch a live demo of the application here!](https://www.loom.com/share/a3a8c9d0f1814950b24ae201b59ed581?sid=74fc6264-2254-49f0-8c62-6b2f44f097ac)
 
 *(Replace the link above with the actual URL to your demo video.)*
 
@@ -44,7 +44,7 @@ Follow these instructions to get the project up and running on your local machin
 ### 1. Clone the Repository
 First, clone this repository to your local machine.
 ```bash
-git clone [https://github.com/Raihaan004/Court-Data-Fetcher-Mini-Dashboard.git](https://github.com/Raihaan004/Court-Data-Fetcher-Mini-Dashboard.git)
+git clone https://github.com/Raihaan004/Court-Data-Fetcher-Mini-Dashboard.git
 cd court-data-fetcher
 ```
 
